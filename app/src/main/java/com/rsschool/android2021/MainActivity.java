@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements FirstFragment.OnG
         final Fragment firstFragment = FirstFragment.newInstance(previousNumber);
         final FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, firstFragment).commit();
-        // TODO: invoke function which apply changes of the transaction
         isSecondFragment = false;
     }
 
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements FirstFragment.OnG
         final Fragment secondFragment = SecondFragment.newInstance(min, max);
         final FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, secondFragment).commit();
-        // TODO: implement it
         isSecondFragment = true;
     }
 
